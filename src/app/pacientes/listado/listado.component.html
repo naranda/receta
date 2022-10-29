@@ -1,0 +1,32 @@
+<h3>Buscar paciente</h3>
+<div class="container">
+    <form autocomplete="off">
+        <input type="text" class="form-control" name="termino" placeholder="Buscar paciente..." />
+    </form>
+
+
+</div>
+<p></p>
+<div class="container">
+    <button type="button" class="btn btn-primary" [routerLink]="['agregar']">Registrar</button>
+
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th> RUT </th>
+            <th> Nombre </th>
+            <th> Apellido </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> 1-9 </td>
+            <td> Juan </td>
+            <td> Perez </td>
+            <td> <a [routerLink]="[ '/paciente']">Ver Detalle...</a></td>
+        </tr>
+    </tbody>
+</table>
